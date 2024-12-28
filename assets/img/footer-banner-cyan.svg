@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Pattern for background -->
+    <pattern id="pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 5h10M5 0v10" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="200" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- Pattern overlay -->
+  <rect width="200" height="200" fill="url(#pattern)"/>
+  
+  <!-- Code brackets decoration -->
+  <path d="M20,50 L35,65 L20,80" fill="none" stroke="#67e8f9" stroke-width="2"/>
+  <path d="M50,50 L35,65 L50,80" fill="none" stroke="#67e8f9" stroke-width="2"/>
+  
+  <!-- Website name -->
+  <text x="100" y="100" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">WEB STARTER</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="8" fill="#a5f3fc" text-anchor="middle">Learn. Code. Create.</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="160" cy="50" r="5" fill="#67e8f9" opacity="0.5"/>
+  <circle cx="170" cy="100" r="4" fill="#67e8f9" opacity="0.3"/>
+  <circle cx="60" cy="150" r="6" fill="#67e8f9" opacity="0.4"/>
+  <circle cx="40" cy="100" r="3" fill="#67e8f9" opacity="0.6"/>
+</svg>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Starter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {}
+        }
+        }
+</script>
+    
+</head>
+<body>
+    <nav class="rounded-b-lg shadow-2xl flex justify-between items-center p-4 bg-cyan-400 bg-opacity-65 backdrop-blur-[5px] font-semibold w-full fixed top-0 right-0 left-0 z-40">
+        <div>
+            <h1 class="font-bold text-xl">Starter Web</h1>
+        </div>
+        <div id="menu-ikon" class="menu">
+            <img src="./assets/img/menu.svg" alt="">
+        </div>
+        <ul id="nav-list" class="shadow-2xl rounded-b-lg nav-list gap-6 bg-cyan-400 md:bg-opacity-0   md:mx-10 transition duration-300 ease-in-out">
+            <li class="relative group">
+                <a  class="transition-all duration-[0.2s] text-cyan-200 hover:text-cyan-100 flex" href="#">
+                    Home <img id="tombol-home" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-home" class="dropdown hidden bg-cyan-500 px-4 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="#walcome">WALCOME</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="#about">ABOUT</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="#source">SOURCE</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="#learning">LEARNING</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a  class="transition-all duration-500 hover:text-cyan-100 flex" href="konten.html">
+                    Content <img id="tombol-content" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-content" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute ">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li>
+            <li class="relative group md:mr-2">
+                <a class=" transition-all duration-[0.2s] hover:text-cyan-100 flex" href="kuis.html">
+                    Quiz <img id="tombol-quiz" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-quiz" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li> 
+            <li class="flex items-center ">
+                <div class="flex">
+                    <span class="mr-2 text-sm text-cyan-800 ">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden">
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-cyan-800 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-cyan-200 transition duration-300 ease-in-out">
+                            </div>
+                        </div>
+                    </label>
+                    <span class="ml-2 text-sm text-cyan-800">Dark</span>    
+                </div>
+            </li>            
+        </ul>
+    </nav>
+    
+    <section class="z-0 bg-white dark:bg-slate-800" id="walcome">
+        <div class="w-full h-[100vh] flex flex-col justify-center items-center md:flex-row md:justify-evenly">
+            <div class="md:order-2">
+                <img class="md:w-[350px]" src="./assets/img/fotoHome.png" alt="" width="280px">
+            </div>
+            <div class="mt-4 mx-10 flex flex-col justify-center items-center md:justify-start md:items-start md:order-1 md:gap-3">
+                <h2 class="text-xl font-bold md:text-3xl lg:text-3xl dark:text-white">Hai, Selamat datang </h2>
+                <h3 class="text-2xl font-black md:text-4xl lg:text-5xl dark:text-white">Starter Web</h3>
+                <p class="mb-4 text-center md:text-2xl md:text-left lg:text-2xl dark:text-white">Mari belajar langkah awal dalam membuat frontend website</p>
+                <div class="flex gap-2">
+                    <div class="bg-cyan-400 rounded-full px-6 hover:scale-90">
+                        <p class="font-semibold dark:text-white"><a href="https://www.instagram.com/rafi.ap_95/?igsh=MWJvZGVvNDZ0NDN5dQ%3D%3D">Hubungi</a></p>
+                    </div>
+                    <div class="rounded-full px-6 border-[2px] border-solid border-cyan-400 hover:scale-90">
+                        <p class="font-semibold dark:text-white"><a href="https://github.com/Rafi-Andi">Ikuti</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative z-0 dark:bg-slate-800">
+        <div class="absolute top-0 right-0 left-0">
+            <img src="./assets/img/bingkai.png" alt="">
+        </div> 
+        <h1 class="w-full  text-center font-bold text-2xl pt-[9rem] md:text-3xl md:pt-[22rem] dark:text-white" id="about">Tentang Kami</h1>
+        <div class="w-full p-5 h-[100vh] flex flex-col justify-center items-center pb-[7rem] md:flex-row md:justify-between md:gap-6">
+            <div class="md:w-[1200px]">
+                <img class="md:w-[600px]" src="./assets/img/fotoAbout.png" alt="" width="280px">
+            </div>
+            <div class="mt-4 md:mt-0 mx-10 ">
+                <p class="md:text-xl lg:text-2xl dark:text-white">platform yang ramah untuk pemula, dengan materi terstruktur mulai dari HTML, CSS, hingga JavaScript. Dengan WebStarter, pengguna akan dibimbing secara bertahap untuk membangun fondasi yang kuat sebagai developer web.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-mentor bg-cyan-200 px-4 py-6 z-0 dark:bg-cyan-900">
+        <h1 class="text-xl font-bold md:text-2xl text-center dark:text-white" id="source">Video Youtube Dari :</h1>
+        <div class="flex flex-wrap justify-evenly items-center gap-4 mt-6">
+            <div class="mentor bg-cyan-400 dark:bg-cyan-700 w-[200px] p-5 flex flex-col items-center justify-center rounded-lg relative truncate transition-all duration-[0.5s] hover:bg-cyan-500 shadow-md dark:hover:bg-cyan-800">
+                <div class="foto">
+                    <img src="./assets/img/WPU.jpg" alt="">
+                </div>
+                <div class="text-center p-2">
+                    <h1 class="font-semibold md:text-xl dark:text-white">Sandhika Galih</h1>
+                    <p class="dark:text-white">@shandhikagalihWPU</p>
+                </div>
+                <div class="mentor-sosmed absolute top-50 flex flex-col gap-2 right-[-100px] transition-all duration-[0.5s] bg-cyan-400 py-5 px-1 rounded-s-xl">
+                    <div class="hover:scale-90">
+                        <a href="https://www.instagram.com/sandhikagalih"><img src="./assets/img/instagram (2).svg" alt=""></a>
+                    </div>
+                    <div class="hover:scale-90">
+                        <a href="https://www.youtube.com/@sandhikagalihWPU"><img src="./assets/img/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mentor bg-cyan-400 dark:bg-cyan-700 w-[200px] p-5 flex flex-col items-center justify-center rounded-lg relative truncate transition-all duration-[0.5s] hover:bg-cyan-500 shadow-md dark:hover:bg-cyan-800">
+                <div class="foto">
+                    <img src="./assets/img/Programmer zaman now.jpg" alt="">
+                </div>
+                <div class="text-center p-2">
+                    <h1 class="font-semibold dark:text-white">Programmer Zaman Now</h1>
+                    <p class="dark:text-white">@Programmerzamannow</p>
+                </div>
+                <div class="mentor-sosmed absolute top-50 flex flex-col gap-2 right-[-100px] transition-all duration-[0.5s] bg-cyan-400 py-5 px-1 rounded-s-xl">
+                    <div class="hover:scale-90">
+                        <a href="https://www.instagram.com/programmerzamannow/#"><img src="./assets/img/instagram (2).svg" alt=""></a>
+                    </div>
+                    <div class="hover:scale-90">
+                        <a href="https://www.youtube.com/@ProgrammerZamanNow"><img src="./assets/img/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mentor bg-cyan-400 dark:bg-cyan-700 w-[200px] p-5 flex flex-col items-center justify-center rounded-lg relative truncate transition-all duration-[0.5s] hover:bg-cyan-500 shadow-md dark:hover:bg-cyan-800">
+                <div class="foto">
+                    <img src="./assets/img/dea afrizal.jpg" alt="">
+                </div>
+                <div class="text-center p-2">
+                    <h1 class="font-semibold md:text-xl dark:text-white">Dea Afrizal</h1>
+                    <p class="dark:text-white">@deaafrizal</p>
+                </div>
+                <div class="mentor-sosmed absolute top-50 flex flex-col gap-2 right-[-100px] transition-all duration-[0.5s] bg-cyan-400 py-5 px-1 rounded-s-xl">
+                    <div class="hover:scale-90">
+                        <a href="instagram.com/dea.afrizal"><img src="./assets/img/instagram (2).svg" alt=""></a>
+                    </div>
+                    <div class="hover:scale-90">
+                        <a href="youtube.com/@deaafrizal"><img src="./assets/img/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white z-0 dark:bg-slate-800">
+        <h1 class="text-xl font-bold md:text-2xl text-center pt-4 text-cyan-900 dark:text-cyan-400" id="learning">Yang akan dipelajari</h1>
+        <div class="bg-white dark:bg-slate-800 flex flex-wrap justify-center items-center gap-4 mt-5 md:gap-5 p-8">
+            <div class="bg-cyan-400 w-[250px] dark:bg-cyan-600 shadow-lg rounded-lg transition-all duration-[0.5s] hover:scale-[105%]">
+                <div>
+                    <img src="./assets/img/html.png" alt="" width="250px">
+                </div>
+                <div class="text-center p-4 hover:">
+                    <h1 class="text-xl font-bold text-cyan-100 mb-4">HTML</h1>
+                    <p class="text-white">Bahasa yang digunakan untuk membuat struktur dasar sebuah halaman web, seperti teks, gambar, dan tautan.
+                    </p>
+                    <div class="flex flex-row mt-8 gap-2 text-sm justify-center">
+                        <p class="bg-cyan-700 text-white rounded-md  text-left px-2 py-2 transition-all duration-[0.2s] hover:bg-cyan-600 hover:translate-y-[5%]"><a href="" id="tombol-html">Selengkapnya</a></p>
+                        <p class="bg-cyan-700 text-white rounded-md  text-left px-3 py-2 transition-all duration-[0.2s] hover:bg-cyan-600 hover:translate-y-[5%]"><a href="materiHtml.html">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <modal id="modal-html" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
+                <div class="w-[300px] bg-white dark:bg-cyan-500 rounded-lg p-8 shadow-lg md:m-8 md:w-[50%]">
+                    <img src="./assets/img/html.png" alt="HTML" class="mb-4">
+                    <h2 class="text-2xl font-bold text-cyan-900 mb-2 dark:text-white">HTML</h2>
+                    <p class="text-gray-700 text-sm dark:text-white">HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur dan konten halaman web. HTML merupakan dokumen standar yang digunakan untuk mendesain halaman web. 
+                    </p>
+                    <button id="tutup-html" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                    Tutup
+                    </button>
+                </div>
+            </modal>
+
+            <div class="bg-cyan-400 w-[250px] dark:bg-cyan-600 shadow-lg rounded-lg transition-all duration-[0.5s]  hover:scale-[105%]">
+                <div>
+                    <img src="./assets/img/css.png" alt="" width="250px">
+                </div>
+                <div class="text-center p-4">
+                    <h1 class="text-xl font-bold text-white mb-4 ">CSS </h1>
+                    <p class="text-white">Bahasa yang digunakan untuk mendesain tampilan halaman web, termasuk warna, tata letak, dan animasi.</p>
+                    <div class="flex flex-row mt-8 gap-2 text-sm justify-center">
+                        <p class="bg-cyan-700 text-white rounded-md  text-left px-2 py-2 transition-all duration-[0.2s] hover:bg-cyan-600 hover:translate-y-[5%]"><a href="" id="tombol-css">Selengkapnya</a></p>
+                        <p class="bg-cyan-700 text-white rounded-md  text-left px-3 py-2 transition-all duration-[0.2s] hover:bg-cyan-600 hover:translate-y-[5%]"><a href="materiCSS.html">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <modal id="modal-css" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
+                <div class="bg-white dark:bg-cyan-500 rounded-lg p-8 shadow-lg m-6 md:m-8 md:w-[50%]">
+                    <img src="./assets/img/css.png" alt="HTML" class="mb-4">
+                    <h2 class="text-2xl font-bold text-cyan-900 mb-2 dark:text-white">CSS</h2>
+                    <p class="text-gray-700 tex-sm dark:text-white">CSS adalah singkatan dari Cascading Style Sheets yang digunakan untuk mengatur tampilan dan desain halaman web. CSS berfungsi untuk mengatur elemen HTML, seperti warna, font, tata letak halaman, dan spasi antar paragraf. </p>
+                    <button id="tutup-css" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Tutup
+                    </button>
+                </div>
+            </modal>
+            <div class="bg-cyan-400 w-[250px] dark:bg-cyan-600 shadow-lg rounded-lg transition-all duration-[0.5s] hover:scale-[105%]">
+                <div>
+                    <img src="./assets/img/js.jpg" alt="" width="250px">
+                </div>
+                <div class="text-center p-4">
+                    <h1 class="text-xl font-bold text-white mb-4">JAVASCRIPT</h1>
+                    <p class="text-white">Bahasa pemrograman yang digunakan untuk menambahkan interaktivitas dan logika pada halaman web</p>
+                    <div class="flex flex-row mt-8 gap-2 text-sm justify-center">
+                        <p class="bg-cyan-700 text-white rounded-md  text-left px-2 py-2 transition-all duration-[0.2s] hover:bg-cyan-600 hover:translate-y-[5%]"><a href="" id="tombol-js">Selengkapnya</a></p>
+                        <p class="bg-cyan-700 text-white rounded-md  text-left px-3 py-2 transition-all duration-[0.2s] hover:bg-cyan-600 hover:translate-y-[5%]"><a href="materiJS.html">Pelajari</a></p>
+                    </div>
+                </div>
+            </div>
+            <modal id="modal-js" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
+                <div class="bg-white dark:bg-cyan-500 rounded-lg p-8 shadow-lg m-6 md:m-8 md:w-[50%]">
+                    <img src="./assets/img/js.jpg" alt="HTML" class="mb-4">
+                    <h2 class="text-2xl font-bold text-cyan-900 mb-2 dark:text-white">HTML</h2>
+                    <p class="text-gray-700 text-sm dark:text-white">JavaScript adalah bahasa pemrograman yang digunakan developer untuk membuat halaman web yang interaktif.fungsi JavaScript dapat meningkatkan pengalaman pengguna situs web. </p>
+                    <button id="tutup-js" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
+                    Tutup
+                    </button>
+                </div>
+            </modal>
+        </div>
+    </section>
+
+    <footer class="bg-white lg:grid lg:grid-cols-5 dark:bg-slate-800 pt-5">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+          <img
+            src="./assets/img/footer-banner-cyan.svg"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div>
+              <p>
+                <span class="text-xs uppercase tracking-wide text-gray-500 dark:text-white">Sosial Media </span>
+              </p>
+      
+              <ul class="mt-8 space-y-1 text-sm text-gray-700 dark:text-white">
+                <li>ig: @rafi.ap_95</li>
+                <li>github: Rafi-Andi</li>
+              </ul>
+      
+              <ul class="mt-8 flex gap-6">
+                <li>
+                  <a
+                    href="https://www.instagram.com/rafi.ap_95/?igsh=MWJvZGVvNDZ0NDN5dQ%3D%3D"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75"
+                  >
+                    <span class="sr-only dark:text-white">Instagram</span>
+      
+                    <svg class="size-6 dark:stroke-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>      
+                <li>
+                  <a
+                    href="https://github.com/Rafi-Andi"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75"
+                  >
+                    <span class="sr-only dark:text-white">GitHub</span>
+      
+                    <svg class="size-6 dark:stroke-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <p class="font-medium text-gray-900 dark:text-white">Navigation</p>
+      
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="index.html" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Home </a>
+                  </li>
+      
+                  <li>
+                    <a href="konten.html" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Content </a>
+                  </li>
+      
+                  <li>
+                    <a href="kuis.html" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Quiz </a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div>
+                <p class="font-medium text-gray-900 dark:text-white">Sub Navigation</p>
+      
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="index.html#walcome" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Walcome </a>
+                  </li>
+      
+                  <li>
+                    <a href="index.html#about" class="text-gray-700 transition hover:opacity-75 dark:text-white"> About </a>
+                  </li>
+      
+                  <li>
+                    <a href="index.html#source" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Source </a>
+                  </li>
+                  <li>
+                    <a href="index.html#learning" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Learning </a>
+                  </li>
+                  <li>
+                    <a href="materiHtml.html" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Konten HTML </a>
+                  </li>
+                  <li>
+                    <a href="materiCSS.html" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Konten CSS </a>
+                  </li>
+                  <li>
+                    <a href="materiJS.html" class="text-gray-700 transition hover:opacity-75 dark:text-white"> Konten JS </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="mt-12 border-t border-gray-300 dark:border-white pt-12">
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <p class="mt-2 text-xs text-gray-500 dark:text-gray-300 sm:mt-0">
+                &copy; 2024. Rafi Andi Dev. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="./assets/js/index.js">
+    </script>
+
+    <script src="./assets/js/home.js"></script>
+
+    <script src="./assets/js/darkMode.js"></script>
+    
+</body>
+</html>

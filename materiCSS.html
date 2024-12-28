@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Starter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-gray-100 dark:bg-slate-900">
+    <nav class="rounded-b-lg shadow-2xl flex justify-between items-center p-4 bg-cyan-400 bg-opacity-65 backdrop-blur-[5px] font-semibold w-full fixed top-0 right-0 left-0 z-40">
+        <div>
+            <h1 class="font-bold text-xl">Starter Web</h1>
+        </div>
+        <div id="menu-ikon" class="menu">
+            <img src="./assets/img/menu.svg" alt="">
+        </div>
+        <ul id="nav-list" class="shadow-2xl rounded-b-lg nav-list gap-6 md:mx-10 bg-cyan-400 md:bg-opacity-0">
+            <li class="relative group">
+                <a  class="transition-all duration-[0.2s] hover:text-cyan-100 flex" href="index.html">
+                    Home <img id="tombol-home" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-home" class="dropdown hidden bg-cyan-500 px-4 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#walcome">WALCOME</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#about">ABOUT</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#source">SOURCE</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#learning">LEARNING</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a  class="transition-all duration-500 hover:text-cyan-100 flex" href="konten.html">
+                    Content <img id="tombol-content" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-content" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute ">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded text-cyan-200"><a href="materiCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li>
+            <li class="relative group md:mr-2">
+                <a class=" transition-all duration-[0.2s] hover:text-cyan-100 flex" href="kuis.html">
+                    Quiz <img id="tombol-quiz" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-quiz" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li>
+            <li class="flex items-center ">
+                <div class="flex">
+                    <span class="mr-2 text-sm text-cyan-800 ">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden">
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-cyan-800 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-cyan-200 transition duration-300 ease-in-out">
+                            </div>
+                        </div>
+                    </label>
+                    <span class="ml-2 text-sm text-cyan-800">Dark</span>    
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="min-h-screen flex items-center justify-center py-8 mt-24">
+        <div class="max-w-2xl w-full px-4">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-cyan-400">Selamat datang di materi CSS</h1>
+                <p class="text-gray-600 mt-2 dark:text-cyan-400">Mari belajar membuat style pada website membuat CSS</p>
+            </div>
+
+            <!-- Content Section -->
+            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden mb-10">
+                <!-- Video Tutorial -->
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed//CleFk3BZB3g" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold dark:text-white text-gray-800">Apa itu CSS ?</h2>
+                    <p class="text-gray-600 mt-2 dark:text-white">CSS adalah singkatan dari Cascading Style Sheets, yaitu bahasa yang digunakan untuk mendesain dan mengatur tampilan halaman web. CSS memungkinkan pengembang mengontrol tata letak, warna, font, dan elemen visual lainnya secara efisien.</p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Tujuan dan Manfaat CSS</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">CSS memiliki manfaat dan di gunakan untuk sebagai berikut :
+                        <ul class="list-disc list-inside mt-2 dark:text-white">
+                            <li><strong>Memisahkan Konten dan Desain:</strong> Memungkinkan HTML tetap fokus pada struktur, sementara CSS menangani desain visual.</li>
+                            <li><strong>Pengelolaan yang Mudah:</strong> Dengan satu file CSS, Anda dapat mengatur tampilan seluruh situs.</li>
+                            <li><strong>Responsivitas:</strong> Responsivitas: Memungkinkan desain web yang dapat beradaptasi pada berbagai ukuran layar. </li>
+                            <li><strong>Peningkatan Kinerja: </strong> Mengurangi redundansi kode HTML karena gaya dapat diterapkan secara global.</li>
+                        </ul>
+                    </p>
+
+                    <div class="mt-4">
+                        <a 
+                            href="https://youtu.be/CleFk3BZB3g?si=tjeLTYAAR4mdWRv-" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed//8lXDi2Mxp9c" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Apa itu Anatomi CSS ?</h2>
+                    <p class="text-gray-600 mt-2 dark:text-white">Anatomi CSS mengacu pada komponen-komponen dasar yang membentuk sebuah aturan CSS. Ini terdiri dari tiga bagian utama: selektor, properti, dan Value. Dengan memahami anatomi CSS, Anda dapat dengan mudah menulis aturan gaya untuk mengubah tampilan elemen-elemen HTML di halaman web.</p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Struktur Anatomi CSS Dasar</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">CSS terdiri dari tiga komponen utama: selektor, properti, dan nilai. Berikut penjelasan singkat tentang masing-masing komponen:
+                        <ul class="list-disc list-inside mt-2 dark:text-white">
+                            <li><strong>Selektor : </strong> bagian dari CSS yang digunakan untuk memilih elemen HTML yang ingin Anda beri gaya (style). Selektor dapat berupa tag HTML, kelas, atau ID.</li>
+                            <li><strong>Properti :</strong> atribut yang ingin Anda ubah pada elemen HTML yang dipilih. Ini mengatur aspek visual elemen tersebut.
+                                Contoh properti: color, font-size, margin, padding, border, dll.</li>
+                            <li><strong>Value :</strong> nilai yang diterapkan pada properti untuk memberikan gaya yang diinginkan. Nilai dapat berupa angka, warna, ukuran, atau jenis font.</li>
+                        </ul>
+                    </p>
+
+
+                    <div class="mt-4">
+                        <a 
+                            href="https://youtu.be/8lXDi2Mxp9c?si=ZAVncuL8wBr7RiuZ" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//nPHed3_oPvY" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//xih8giA7S3Q" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Apa itu Font Styling dan Text Styling?</h2>
+                    <p class="text-gray-600 mt-2 dark:text-white">Font Styling dan Text Styling dalam CSS adalah teknik untuk mengubah tampilan teks di halaman web. Font Styling mengatur jenis, ukuran, dan gaya font, sedangkan Text Styling mempengaruhi aspek lain seperti warna, jarak antar huruf, dan perataan teks.</p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Struktur Font Styling dan Text Styling</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">CSS untuk Font Styling dan Text Styling terdiri dari beberapa properti yang mengatur tampilan dan pengaturan teks di halaman web. Berikut adalah elemen-elemen dasar yang sering digunakan:
+                        <ul class="list-disc list-inside mt-2 dark:text-white">
+                            <li><strong>Font Family : </strong> Menentukan jenis font yang di gunakan </li>
+                            <li><strong>Font size</strong> menentukan ukuran font yang di gunakan</li>
+                            <li><strong>Font Weight:</strong> Menentukan ketebalan font yang di gunakan</li>
+                            <li><strong>Font Style:</strong> Menentukan Gaya font seperti italic atau normal</li>
+                            <li><strong>color :</strong> Mengatur warna teks.</li>
+                            <li><strong>Text align :</strong> mengatur perataan text (left,rigtht, center)</li>
+                            <li><strong>Text decoration : </strong> Menambahkan dekorasi pada teks seperti garis bawah, garis tengah, atau garis atas. </li>
+                        </ul>
+                    </p>
+
+                    <div class="mt-4 flex gap-6">
+                        <a 
+                            href="https://youtu.be/nPHed3_oPvY?si=SA9NVOIn2LjhVz2b" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video 1
+                        </a>
+                        <a 
+                            href="https://youtu.be/xih8giA7S3Q?si=sNh-RiOOyPMAY7MB" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//0KLwWyQyMQo" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//G0gYWdIHOug" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Apa itu Selector dan Pseudoclass pada CSS ?</h2>
+                    <p class="text-gray-600 mt-2 dark:text-white">Selector dan Pseudoclass adalah bagian dari CSS yang digunakan untuk memilih elemen HTML dan memberikan gaya tertentu berdasarkan kondisi spesifik. <strong>Selector</strong> digunakan untuk memilih elemen HTML tertentu, sementara <strong>Pseudoclass</strong> digunakan untuk menargetkan elemen berdasarkan status atau keadaan tertentu yang tidak dapat dipilih langsung dengan selector biasa.</p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Struktur Selector dan Pseudoclass pada CSS</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">CSS untuk Selector dan Pseudoclass terdiri dari berbagai jenis selector untuk memilih elemen dan pseudoclass untuk menerapkan gaya berdasarkan kondisi tertentu. Berikut adalah elemen-elemen dasar yang sering digunakan:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                            <li><strong>Element Selector :</strong> Memilih elemen HTML berdasarkan nama tag-nya.</li>
+                            <li><strong>Class Selector :</strong> Memilih elemen berdasarkan kelasnya. Digunakan dengan tanda titik (<code>.</code>).</li>
+                            <li><strong>ID Selector :</strong> Memilih elemen berdasarkan ID-nya. Digunakan dengan tanda pagar (<code>#</code>).</li>
+                            <li><strong>Universal Selector :</strong> Memilih semua elemen dalam dokumen.</li>
+                            <li><strong>Descendant Selector :</strong> Memilih elemen yang merupakan keturunan dari elemen lain.</li>
+                            <li><strong>Attribute Selector :</strong> Memilih elemen berdasarkan atributnya.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Pseudoclass pada CSS</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">Pseudoclass memungkinkan Anda menambahkan gaya berdasarkan keadaan atau status elemen. Berikut adalah beberapa pseudoclass yang umum digunakan:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                            <li><strong>:hover</strong> - Mengubah gaya elemen saat kursor berada di atas elemen tersebut.</li>
+                            <li><strong>:active</strong> - Mengubah gaya elemen saat elemen aktif (misalnya saat diklik).</li>
+                            <li><strong>:focus</strong> - Mengubah gaya elemen saat elemen tersebut mendapatkan fokus (misalnya saat elemen input aktif).</li>
+                            <li><strong>:nth-child()</strong> - Memilih elemen berdasarkan posisi anak dalam sebuah elemen induk.</li>
+                            <li><strong>:first-child</strong> - Memilih elemen pertama di dalam elemen induk.</li>
+                            <li><strong>:last-child</strong> - Memilih elemen terakhir di dalam elemen induk.</li>
+                            <li><strong>:not()</strong> - Memilih elemen yang tidak sesuai dengan selector tertentu.</li>
+                    </ul>
+
+                    <div class="mt-4 flex gap-6">
+                        <a 
+                            href="https://youtu.be/0KLwWyQyMQo?si=s_YDfhP1h-nr2kUv" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video 1
+                        </a>
+                        <a 
+                            href="https://youtu.be/G0gYWdIHOug?si=3jjq6avj0YLzWy1M" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//-J372iDFU8Y" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//u7w0B2f91rk" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Apa itu CSS Flexbox ?</h2>
+                    <p class="text-gray-600 mt-2 dark:text-white">CSS Flexbox adalah metode layout yang digunakan untuk mendistribusikan ruang di dalam container dan mengatur elemen-elemen di dalamnya secara lebih fleksibel dan efisien. Flexbox memungkinkan pengaturan elemen dalam satu dimensi (baik secara horisontal maupun vertikal) dengan kontrol yang lebih besar terhadap perataan dan distribusi ruang antar elemen.</p>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Struktur Dasar Flexbox</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">Flexbox bekerja dengan dua komponen utama: <strong>flex container</strong> (kontainer fleksibel) dan <strong>flex items</strong> (elemen fleksibel). Flex container adalah elemen induk yang menggunakan display flex, dan flex items adalah elemen-elemen di dalamnya yang akan diatur oleh flexbox.</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>Flex Container :</strong> Elemen yang diatur dengan flexbox. Untuk membuat container fleksibel, Anda harus menetapkan properti <code>display: flex;</code>.</li>
+                        <li><strong>Flex Items :</strong> Elemen-elemen di dalam flex container yang diatur menggunakan properti flexbox.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Properti Utama pada Flexbox</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">Flexbox menyediakan berbagai properti yang membantu dalam pengaturan elemen. Berikut adalah beberapa properti utama yang sering digunakan:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>display: flex;</strong> - Menetapkan elemen sebagai flex container.</li>
+                        <li><strong>flex-direction:</strong> Menentukan arah layout flex items dalam flex container. Nilai yang umum digunakan adalah <code>row</code> (default), <code>column</code>, <code>row-reverse</code>, dan <code>column-reverse</code>.</li>
+                        <li><strong>justify-content:</strong> Mengatur perataan elemen-elemen secara horizontal dalam flex container. Nilai yang umum digunakan adalah <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, dan <code>space-around</code>.</li>
+                        <li><strong>align-items:</strong> Mengatur perataan elemen-elemen secara vertikal dalam flex container. Nilai yang umum digunakan adalah <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, dan <code>stretch</code>.</li>
+                        <li><strong>align-self:</strong> Mengatur perataan individual elemen dalam flex container, yang menimpa pengaturan <code>align-items</code> pada container.</li>
+                        <li><strong>flex-wrap:</strong> Menentukan apakah flex items akan dibungkus atau tidak dalam beberapa baris (wrap). Nilai yang digunakan adalah <code>nowrap</code>, <code>wrap</code>, dan <code>wrap-reverse</code>.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Contoh Penggunaan Flexbox                  </h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">Berikut adalah contoh implementasi Flexbox pada sebuah layout sederhana:                  </p>
+                    <pre class="bg-gray-100 p-4 rounded-md text-xs text-gray-800 mt-2 md:text-sm dark:bg-slate-600">
+                    <code class="dark:text-white">
+/* Menentukan flex container */
+.container {
+    display: flex;
+    justify-content:space-between; 
+    /* Menyebar elemen 
+    secara merata */
+
+    align-items: center;            
+    /* Menyejajarkan elemen 
+    secara vertikal */
+}
+
+/* Flex item */
+.item {
+    flex: 1;                        
+    /* Membuat elemen fleksibel 
+    untuk mengisi ruang */
+
+    padding: 10px;
+    background-color: lightblue;
+}
+                    </code>
+                    </pre>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-4 dark:text-white">Contoh Layout Flexbox</h3>
+                    <p class="text-gray-600 mt-2 dark:text-white">Berikut adalah contoh layout flexbox yang menggunakan <code>flex-direction: column;</code> untuk menata elemen secara vertikal:</p>
+                    <pre class="bg-gray-100 p-4 rounded-md text-xs text-gray-800 mt-2 md:text-sm dark:bg-slate-600">
+                        <code class="dark:text-white">
+/* Menentukan flex container 
+
+flex-direction column */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flex item */
+.item {
+    margin: 10px;
+    padding: 15px;
+    background-color:lightcoral;
+}
+                        </code>
+                    </pre>
+
+                    <p class="text-gray-600 mt-2 dark:text-white">Dengan menggunakan Flexbox, Anda dapat dengan mudah mengatur layout halaman web, baik secara horizontal maupun vertikal, dan mengontrol distribusi ruang di dalam container.</p>
+
+                    <div class="mt-4 flex gap-6">
+                        <a 
+                            href="https://youtu.be/-J372iDFU8Y?si=miTQulJ1VAgD_qiS" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video 1
+                        </a>
+                        <a 
+                            href="https://youtu.be/u7w0B2f91rk?si=4DcpKLewzJ9KBMd2" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video 2
+                        </a>
+                    </div>
+                    <p class="underline text-blue-700 dark:text-blue-300 mt-5"><a href="https://youtu.be/FZVLz5_RNho?si=YWU3-fvwTcXBuyCT">Sekarang coba latihan membuat navbar menggunakan css flexbox</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full h-[200px] bg-cyan-400 dark:bg-cyan-700 flex justify-between items-center pt-11">
+      <a href="materiHtml.html">
+        <div class="flex gap-2 px-3 py-6 items-center">
+        <img class="dark:invert" src="./assets/img/arrow-left-circle.svg" alt="" width="25px">
+        <h1 class="font-semibold text-sm md:text-xl dark:text-white">HTML</h1>
+        </div>
+      </a>
+      <a href="kuisCSS.html">
+        <div class="flex gap-2 px-3 py-6 items-center">
+        <h1 class="font-semibold text-sm md:text-xl dark:text-white">Kuis CSS</h1>
+        </div>
+      </a>
+      <a href="materiJS.html">
+        <div class="flex gap-2 px-3 py-6 items-center">
+        <h1 class="font-semibold text-sm md:text-xl dark:text-white">JavaScript</h1>
+        <img class="dark:invert" src="./assets/img/arrow-right-circle.svg" alt="" width="25px">
+        </div>
+      </a>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/darkMode.js"></script>
+</body>
+</html>

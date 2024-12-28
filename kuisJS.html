@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Starter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="dark:bg-slate-800">
+    <nav class="rounded-b-lg shadow-2xl flex justify-between items-center p-4 bg-cyan-400 bg-opacity-65 backdrop-blur-[5px] font-semibold w-full fixed top-0 right-0 left-0 z-40">
+        <div>
+            <h1 class="font-bold text-xl">Starter Web</h1>
+        </div>
+        <div id="menu-ikon" class="menu">
+            <img src="./assets/img/menu.svg" alt="">
+        </div>
+        <ul id="nav-list" class="shadow-2xl rounded-b-lg nav-list gap-6 bg-cyan-400 md:bg-opacity-0   md:mx-10 transition duration-300 ease-in-out">
+            <li class="relative group">
+                <a  class="transition-all duration-[0.2s]  hover:text-cyan-100 flex" href="index.html">
+                    Home <img id="tombol-home" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-home" class="dropdown hidden bg-cyan-500 px-4 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#walcome">WALCOME</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#about">ABOUT</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#source">SOURCE</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#learning">LEARNING</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a  class="transition-all duration-500 hover:text-cyan-100 flex" href="konten.html">
+                    Content <img id="tombol-content" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-content" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute ">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li>
+            <li class="relative group md:mr-2">
+                <a class=" transition-all duration-[0.2s] hover:text-cyan-100 flex" href="kuis.html">
+                    Quiz <img id="tombol-quiz" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-quiz" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded "><a href="kuisHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded text-cyan-200"><a href="kuisJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li> 
+            <li class="flex items-center ">
+                <div class="flex">
+                    <span class="mr-2 text-sm text-cyan-800 ">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden">
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-cyan-800 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-cyan-200 transition duration-300 ease-in-out">
+                            </div>
+                        </div>
+                    </label>
+                    <span class="ml-2 text-sm text-cyan-800">Dark</span>    
+                </div>
+            </li>            
+        </ul>
+    </nav>
+
+
+    <div class="min-h-screen flex items-center justify-center py-8 mt-24">
+        <div class="max-w-2xl w-full px-4">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-cyan-400">Selamat datang di Kuis Java Script</h1>
+                <p class="text-gray-600 mt-2 dark:text-cyan-400">Mari kerjakan kuis dengan jujur, selamat mengerjakan</p>
+            </div>
+            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-md overflow-hidden mb-4">
+                <div class="p-4">
+                    <div>
+                        <h1 class="text-left text-xl font-bold dark:text-white">Catatan Penting :</h1>
+                        <p class="text-left text-sm dark:text-white">
+                            <ul class="list-disc p-4">
+                                <li class="text-left text-sm dark:text-white">Kuis berisi 5 pertanyaan</li>
+                                <li class="text-left text-sm dark:text-white">Tekan tombol Mulai pada halaman Kuis untuk memulai</li>
+                                <li class="text-left text-sm dark:text-white">Jangan Refresh browser ketika kuis sedang di mulai </li>
+                                <li class="text-left text-sm dark:text-white">Ikuti instruksi yang muncul pada pop up browser anda!</li>
+                                
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-md overflow-hidden mt-4" id="kontainer">
+                <div id="sebelum-kuis"  class="gap-2 p-4">
+
+                </div>
+                <div id="nomer-satu" class="p-4" hidden>
+                    <h1 class="text-sm dark:text-white">1.Perbedaan utama antara let dan const adalah...</h1>
+                    <div class="mt-2">
+                        <p id="soal-satu-a" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> a. let untuk angka, const untuk string</p>
+                        <p id="soal-satu-b" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> b. let bersifat lokal, const bersifat global </p>
+                        <p id="soal-satu-c" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> c. let bisa diubah nilainya, const tidak bisa diubah </p>
+                        <p id="soal-satu-d" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> d. Tidak ada perbedaan</p>
+                    </div>
+                </div>
+                <div id="nomer-dua" class="p-4" hidden>
+                    <h1 class="text-sm dark:text-white mt-4">2. Apa perbedaan utama antara == dan === dalam JavaScript?</h1>
+                    <div class="mt-2">
+                        <p id="soal-dua-a" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> a.  == membandingkan tipe data, sedangkan === tidak</p>
+                        <p id="soal-dua-b" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> b.  === membandingkan tipe data, sedangkan == tidak </p>
+                        <p id="soal-dua-c" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> c. == digunakan untuk string, === digunakan untuk angka</p>
+                        <p id="soal-dua-d" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> d. Tidak ada perbedaan </p>
+                    </div>
+                </div>
+                <div id="nomer-tiga" class="p-4" hidden>
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm dark:bg-slate-600 overflow-x-scroll text-gray-800 mt-2">
+                        <code class="dark:text-white">
+element.classList.toggle("active");
+                        </code>
+                    </pre>
+                    <h1 class="text-sm dark:text-white">3. Apa fungsi dari method toggle? </h1>
+                    <div class="mt-2">
+                        <p id="soal-tiga-a" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> a.  Menambahkan class active </p>
+                        <p id="soal-tiga-b" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> b.  Menambahkan jika belum ada, menghapus jika sudah ada</p>
+                        <p id="soal-tiga-c" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> c. Menghapus class active</p>
+                        <p id="soal-tiga-d" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> d. Mengganti semua class menjadi active </p>
+                    </div>
+                </div>
+                <div id="nomer-empat" class="p-4" hidden>
+                    <h1 class="text-sm dark:text-white"> 4. Manakah dari pernyataan berikut yang digunakan untuk membuat fungsi dalam JavaScript?
+                    </h1>
+                    <div class="mt-2">
+                        <p id="soal-empat-a" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> a. function myFunction() {}</p>
+                        <p id="soal-empat-b" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> b. myFunction = function {}</p>
+                        <p id="soal-empat-c" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> c. function: myFunction() {}</p>
+                        <p id="soal-empat-d" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> d. function = myFunction {}</p>
+                    </div>
+                </div>
+                <div id="nomer-lima" class="p-4" hidden>
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm dark:bg-slate-600 overflow-x-scroll text-gray-800 mt-2">
+                        <code class="dark:text-white">
+let x = "5";
+let y = 5;
+console.log(x == y);
+                        </code>
+                    </pre>
+                    <h1 class="text-sm dark:text-white mt-4">5. Apa hasil dari kode berikut?</h1>
+                    <div class="mt-2">
+                        <p id="soal-lima-a" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> a. false</p>
+                        <p id="soal-lima-b" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> b. Null </p>
+                        <p id="soal-lima-c" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> c. undefined </p>
+                        <p id="soal-lima-d" class="dark:text-white p-2 mb-2 block w-full cursor-pointer"> d. True </p>
+                    </div>
+                </div>
+                <div id="selesai-kuis" class="p-4" hidden>
+                    <h1 class="text-center dark:text-white">Nilai Kuis Anda Adalah</h1>
+                    <h1 id="nilai-field" class="text-3xl text-center font-bold dark:text-white"></h1>
+                </div>
+                <div class="text-center mt-2 mb-4">
+                    <button class="bg-cyan-400 px-2 font-semibold rounded-full" id="tombol-hapus" hidden>Mulai Ulang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/darkMode.js"></script>
+    <script src="./assets/js/kuisJS.js"></script>
+        
+</body>
+</html>

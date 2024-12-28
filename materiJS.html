@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Starter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-gray-100 dark:bg-slate-900">
+    <nav class="rounded-b-lg shadow-2xl flex justify-between items-center p-4 bg-cyan-400 bg-opacity-65 backdrop-blur-[5px] font-semibold w-full fixed top-0 right-0 left-0 z-40">
+        <div>
+            <h1 class="font-bold text-xl">Starter Web</h1>
+        </div>
+        <div id="menu-ikon" class="menu">
+            <img src="./assets/img/menu.svg" alt="">
+        </div>
+        <ul id="nav-list" class="shadow-2xl rounded-b-lg nav-list gap-6 md:mx-10 bg-cyan-400 md:bg-opacity-0">
+            <li class="relative group">
+                <a  class="transition-all duration-[0.2s] hover:text-cyan-100 flex" href="index.html">
+                    Home <img id="tombol-home" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-home" class="dropdown hidden bg-cyan-500 px-4 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#walcome">WALCOME</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#about">ABOUT</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#source">SOURCE</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="index.html#learning">LEARNING</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a  class="transition-all duration-500 hover:text-cyan-100 flex" href="konten.html">
+                    Content <img id="tombol-content" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-content" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute ">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="materiCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded text-cyan-200"><a href="materiJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li>
+            <li class="relative group md:mr-2">
+                <a class=" transition-all duration-[0.2s] hover:text-cyan-100 flex" href="kuis.html">
+                    Quiz <img id="tombol-quiz" src="./assets/img/dropdown.svg" alt="" width="25px">
+                </a>
+                <ul id="dropdown-quiz" class="dropdown hidden bg-cyan-500 px-5 py-6  font-semibold rounded-lg text-sm shadow-lg md:absolute">
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisHtml.html">HTML</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisCSS.html">CSS</a></li>
+                    <li class="mb-1 transition-all duration-[0.2s] hover:text-cyan-200 hover:bg-cyan-800 px-2 rounded"><a href="kuisJS.html">JAVASCRIPT</a></li>
+                </ul>
+            </li> 
+            <li class="flex items-center ">
+                <div class="flex">
+                    <span class="mr-2 text-sm text-cyan-800 ">Light</span>
+                    <input type="checkbox" id="dark-toggle" class="hidden">
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-cyan-800 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-cyan-200 transition duration-300 ease-in-out">
+                            </div>
+                        </div>
+                    </label>
+                    <span class="ml-2 text-sm text-cyan-800">Dark</span>    
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="min-h-screen flex items-center justify-center py-8 mt-24">
+        <div class="max-w-2xl w-full px-4">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold dark:text-cyan-400 text-gray-800">Selamat datang di materi Java script</h1>
+                <p class="dark:text-cyan-400 text-gray-600 mt-2">Mari belajar javascript dasar dan DOM pada javascript</p>
+            </div>
+
+            <!-- Content Section -->
+            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden mb-10">
+                <!-- Video Tutorial -->
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed//SDROba_M42g" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl dark:text-white font-semibold text-gray-800">Apa itu JavaScript ?</h2>
+                    <p class="dark:text-white text-gray-600 mt-2">JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan interaktivitas pada halaman web. Dengan JavaScript, Anda dapat membuat halaman web menjadi lebih dinamis, seperti menampilkan animasi, memvalidasi formulir, atau mengontrol perilaku elemen pada halaman.</p>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Struktur Dasar JavaScript</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">JavaScript memiliki sintaks sederhana yang mudah dipelajari. Berikut adalah elemen-elemen utama yang perlu Anda ketahui:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>Variabel :</strong> Digunakan untuk menyimpan data. Ada tiga cara mendeklarasikan variabel: <code>var</code>, <code>let</code>, dan <code>const</code>.</li>
+                        <li><strong>Fungsi :</strong> Kumpulan kode yang dapat dipanggil kapan saja untuk menjalankan tugas tertentu.</li>
+                        <li><strong>Kondisi :</strong> Digunakan untuk membuat keputusan berdasarkan kondisi tertentu menggunakan <code>if</code>, <code>else</code>, dan <code>else if</code>.</li>
+                        <li><strong>Perulangan :</strong> Digunakan untuk mengulangi kode menggunakan <code>for</code>, <code>while</code>, atau <code>do...while</code>.</li>
+                    </ul>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Contoh Dasar JavaScript</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Berikut adalah beberapa contoh kode JavaScript dasar:</p>
+
+                    <pre class="bg-gray-100 dark:bg-slate-600 p-4 rounded-md text-sm text-gray-800 mt-2 overflow-x-auto">
+                    <code class="dark:text-white">
+// Deklarasi variabel
+let name = "Rafi";
+const age = 18;
+
+// Fungsi sederhana
+function greet() {
+    console.log("Halo, " + name);
+    // output : Halo, Rafi
+}
+
+// Pemanggilan fungsi
+greet();
+
+// Kondisi
+if (age >= 18) {
+    console.log("dewasa.");
+} else {
+    console.log("bawah umur.");
+}
+
+// Perulangan
+for (let i = 1; i <= 5; i++) {
+    console.log("Angka " + i);
+    // output Angka 1 sampai Angka 5
+}
+</code>
+</pre>
+
+
+                    <p class="dark:text-white text-gray-600 mt-2">Dengan JavaScript, Anda dapat menambahkan logika dan interaksi pada halaman web, membuatnya lebih hidup dan menarik bagi pengguna.</p>
+
+                    <div class="mt-4">
+                        <a 
+                            href="https://youtu.be/SDROba_M42g?si=0G2oXKDTpMB2j53M" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="aspect-w-16 aspect-h-9 flex">
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//aT60R1cySLM" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//zY5RlT5q5EM" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Apa itu DOM (Document Object Model)?</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">DOM (Document Object Model) adalah representasi struktur dari dokumen HTML atau XML sebagai pohon (tree). Dengan DOM, JavaScript dapat mengakses dan memanipulasi elemen-elemen pada halaman web.</p>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Struktur DOM Tree</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Struktur DOM tree merepresentasikan elemen-elemen HTML dalam bentuk hierarki. Elemen-elemen ini termasuk elemen induk (parent), anak (child), dan saudara (sibling). Berikut adalah struktur dasar DOM tree:</p>
+
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+                    <code class="dark:text-white">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Contoh DOM&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+      &lt;p&gt;contoh DOM Tree&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+                    </code>
+                    </pre>
+                    <p class="dark:text-white text-gray-600 mt-2">Struktur di atas akan diwakili dalam DOM tree seperti ini:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>html</strong> - Elemen root yang menjadi induk dari semua elemen.</li>
+                        <ul class="list-disc list-inside mt-2 ml-4">
+                            <li><strong>head</strong> - Berisi elemen metadata seperti <code>&lt;title&gt;</code>.</li>
+                            <li><strong>body</strong> - Berisi elemen-elemen yang ditampilkan di halaman web, seperti <code>&lt;h1&gt;</code> dan <code>&lt;p&gt;</code>.</li>
+                        </ul>
+                    </ul>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Kesimpulan</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">JavaScript dan DOM memungkinkan Anda untuk membuat halaman web yang interaktif dan dinamis. Dengan memahami struktur DOM tree, Anda dapat memanipulasi elemen-elemen HTML dengan lebih mudah menggunakan JavaScript.</p>
+
+
+
+                    <div class="mt-4 flex flex-row gap-2">
+                        <a 
+                            href="https://youtu.be/aT60R1cySLM?si=4LBdU-BwdVMfGYN5" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            video 1
+                        </a>
+                        <a 
+                            href="https://youtu.be/zY5RlT5q5EM?si=FBH5_w3MGekzX4ZQ" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            video 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//bCKxPvA8KPo" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//q3smRv3KuaI" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl dark:text-white font-semibold text-gray-800">Apa itu DOM Selection?</h2>
+                    <p class="dark:text-white text-gray-600 mt-2">DOM Selection adalah proses memilih elemen-elemen pada dokumen HTML menggunakan JavaScript. Dengan DOM Selection, Anda dapat mengakses, membaca, atau memanipulasi elemen tertentu dalam halaman web.</p>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Metode DOM Selection</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">JavaScript menyediakan beberapa metode untuk memilih elemen dalam DOM. Berikut adalah metode yang paling umum digunakan:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>getElementById:</strong> Memilih elemen berdasarkan atribut ID.</li>
+                        <li><strong>getElementsByClassName:</strong> Memilih elemen berdasarkan atribut kelas (class).</li>
+                        <li><strong>getElementsByTagName:</strong> Memilih elemen berdasarkan nama tag HTML.</li>
+                        <li><strong>querySelector:</strong> Memilih elemen pertama yang cocok dengan selector CSS.</li>
+                        <li><strong>querySelectorAll:</strong> Memilih semua elemen yang cocok dengan selector CSS.</li>
+                    </ul>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Contoh Penggunaan DOM Selection</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Berikut adalah beberapa contoh cara menggunakan metode DOM Selection:</p>
+
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm md:text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+                        <code class="dark:text-white">
+// Memilih elemen berdasarkan ID
+const header = document.getElementById("header");
+console.log(header.textContent);
+
+// Memilih elemen berdasarkan class
+const items = document.getElementsByClassName("item");
+console.log(items[0].textContent);
+
+// Memilih elemen berdasarkan tag
+const paragraphs = document.getElementsByTagName("p");
+console.log(paragraphs[0].textContent);
+
+// Memilih elemen pertama dengan querySelector
+const firstItem = document.querySelector(".item");
+console.log(firstItem.textContent);
+
+// Memilih semua elemen dengan querySelectorAll
+const allItems = 
+document.querySelectorAll(".item");
+allItems.forEach(item => console.log(item.textContent));
+</code>
+</pre>
+
+<h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Penjelasan Singkat</h3>
+<p class="dark:text-white text-gray-600 mt-2">Berikut adalah penjelasan singkat tentang metode-metode tersebut:</p>
+<ul class="list-disc list-inside mt-2 dark:text-white">
+    <li><strong>getElementById:</strong> Mengembalikan satu elemen berdasarkan ID.</li>
+    <li><strong>getElementsByClassName:</strong> Mengembalikan kumpulan elemen dengan class tertentu (HTMLCollection).</li>
+    <li><strong>getElementsByTagName:</strong> Mengembalikan kumpulan elemen dengan tag tertentu (HTMLCollection).</li>
+    <li><strong>querySelector:</strong> Mengembalikan elemen pertama yang cocok dengan selector CSS.</li>
+    <li><strong>querySelectorAll:</strong> Mengembalikan semua elemen yang cocok dengan selector CSS (NodeList).</li>
+</ul>
+
+<h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Contoh HTML untuk DOM Selection</h3>
+<p class="dark:text-white text-gray-600 mt-2">Berikut adalah contoh struktur HTML yang digunakan dalam seleksi DOM:</p>
+
+<pre class="bg-gray-100 p-4 rounded-md text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+<code class="dark:text-white">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+    &lt;title&gt;
+      Contoh DOM Selection
+    &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 id="header"&gt;
+    Selamat Datang
+  &lt;/h1&gt;
+  &lt;p class="item"&gt;Item 1&lt;/p&gt;
+  &lt;p class="item"&gt;Item 2&lt;/p&gt;
+  &lt;p class="item"&gt;Item 3&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Kesimpulan</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">DOM Selection adalah langkah pertama untuk berinteraksi dengan elemen-elemen dalam halaman web. Dengan memilih elemen yang tepat, Anda dapat memanipulasi konten, atribut, atau gaya elemen menggunakan JavaScript.</p>
+                    <div class="mt-4 flex flex-row gap-2">
+                        <a 
+                            href="https://youtu.be/bCKxPvA8KPo?si=mwt0XvC5FzR7f-ur" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            video 1
+                        </a>
+                        <a 
+                            href="https://youtu.be/q3smRv3KuaI?si=dETmOSoPcBFu6PfH" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            video 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//ff5aKnXmnx0" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        class="w-[50%] h-full" 
+                        src="https://www.youtube.com/embed//wD-kW0CXf50" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Manipulasi DOM dengan JavaScript</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">JavaScript digunakan untuk membaca, menambahkan, mengubah, atau menghapus elemen pada DOM tree. Berikut adalah contoh sederhana:</p>
+
+                    <pre class = "bg-gray-100 p-4 rounded-md text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+                        <code class="dark:text-white">
+// Menambahkan elemen 
+baru ke DOM
+
+const newElement = document.createElement("p");
+newElement.textContent = "Ini adalah elemen baru.";
+document.body.appendChild(newElement);
+
+// Mengubah teks
+pada elemen
+
+const heading = document.querySelector("h1");
+heading.textContent = "Halo";
+
+// Menghapus elemen
+const paragraph = document.querySelector("p");
+paragraph.remove();
+                        </code>
+                    </pre>
+                    <p class="dark:text-white">Berikut adalah penjelasan dari kode manipulasi DOM:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>createElement:</strong> Membuat elemen HTML baru. Pada kode di atas, <code>document.createElement("p")</code> membuat elemen paragraf baru (<code>&lt;p&gt;</code>).</li>
+                        <li><strong>textContent:</strong> Mengatur atau mendapatkan teks di dalam elemen. Pada kode di atas, <code>newElement.textContent = "Ini adalah elemen baru.";</code> mengisi teks dalam elemen paragraf baru.</li>
+                        <li><strong>appendChild:</strong> Menambahkan elemen baru sebagai anak dari elemen yang sudah ada. Pada kode di atas, <code>document.body.appendChild(newElement);</code> menambahkan paragraf baru ke dalam <code>&lt;body&gt;</code>.</li>
+                        <li><strong>querySelector:</strong> Mengembalikan elemen pertama yang cocok dengan selector CSS. Pada kode di atas, <code>document.querySelector("h1");</code> memilih elemen <code>&lt;h1&gt;</code>.</li>
+                        <li><strong>textContent:</strong> (Digunakan kembali) Mengubah teks elemen yang dipilih. Pada kode di atas, <code>heading.textContent = "Halo";</code> mengganti teks dalam elemen <code>&lt;h1&gt;</code> menjadi "Halo".</li>
+                        <li><strong>querySelector:</strong> (Digunakan kembali) Memilih elemen <code>&lt;p&gt;</code> pertama pada dokumen.</li>
+                        <li><strong>remove:</strong> Menghapus elemen dari DOM. Pada kode di atas, <code>paragraph.remove();</code> menghapus elemen paragraf yang dipilih.</li>
+                    </ul>
+                    <div class="mt-4 flex gap-1 ">
+                        <a 
+                            href="https://youtu.be/ff5aKnXmnx0?si=MwFRb7-OCoyHfQvg" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            video 1
+                        </a>
+                        <a 
+                            href="https://youtu.be/wD-kW0CXf50?si=7Kko8EGlEiR_-Oh3" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            video 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed//ndYweb0Yn6o" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl dark:text-white font-semibold text-gray-800">Apa itu DOM Event?</h2>
+                    <p class="dark:text-white text-gray-600 mt-2">DOM Event adalah mekanisme di mana JavaScript dapat merespons interaksi pengguna dengan elemen pada halaman web. Interaksi ini bisa berupa klik, ketikan, gerakan mouse, atau bahkan perubahan nilai pada form. Dengan menangani event, Anda dapat membuat halaman web menjadi lebih interaktif dan dinamis.</p>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Jenis-Jenis Event</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Berikut adalah beberapa jenis event yang umum digunakan dalam DOM:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>Click Event:</strong> Terjadi ketika pengguna mengklik elemen.</li>
+                        <li><strong>Mouse Events:</strong> Event seperti <code>mouseover</code>, <code>mouseout</code>, dan <code>mousemove</code>.</li>
+                        <li><strong>Keyboard Events:</strong> Event seperti <code>keydown</code>, <code>keypress</code>, dan <code>keyup</code>.</li>
+                        <li><strong>Form Events:</strong> Event seperti <code>submit</code>, <code>change</code>, dan <code>input</code>.</li>
+                        <li><strong>Window Events:</strong> Event seperti <code>load</code> dan <code>resize</code>.</li>
+                    </ul>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Cara Menambahkan Event Listener</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Untuk menangani event, Anda dapat menggunakan metode <code>addEventListener</code>. Metode ini memungkinkan Anda menambahkan fungsi yang akan dijalankan ketika event terjadi.</p>
+
+<pre class="bg-gray-100 px-2 rounded-md text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+<code class="dark:text-white">
+// Menangani event klik
+const button = document.getElementById("myButton");
+button.addEventListener("click", function(){
+    alert("Tombol diklik!");
+});
+
+// Menangani event mouse
+const box = document.getElementById("myBox");
+box.addEventListener("mouseover", function(){
+    box.style.backgroundColor = "yellow";
+});
+box.addEventListener("mouseout", function(){
+    box.style.backgroundColor = "white";
+});
+
+// Menangani event keyboard
+document.addEventListener("keydown", function(e){
+    console.log("Key yang ditekan:", e.key);
+});
+</code>
+</pre>
+
+<h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Contoh HTML untuk Event</h3>
+<p class="dark:text-white text-gray-600 mt-2">Berikut adalah struktur HTML untuk contoh event di atas:</p>
+
+<pre class="bg-gray-100 p-4 rounded-md text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+<code class="dark:text-white">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, 
+    initial-scale=1.0"&gt;
+    &lt;title&gt;Contoh DOM Event&lt;/title&gt;
+    &lt;script src="https://cdn.tailwindcss.com"&gt;
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body class="bg-gray-100 font-sans 
+text-gray-800 p-6"&gt;
+    &lt;div class="max-w-lg mx-auto"&gt;
+        &lt;!-- Tombol --&gt;
+
+        &lt;button id="myButton" 
+        class="px-4 py-2 bg-blue-500 
+        text-white font-semibold rounded shadow 
+        hover:bg-blue-600"&gt;
+                Klik Saya
+        &lt;/button&gt;
+    
+        &lt;!-- Kotak --&gt;
+        &lt;div id="myBox" 
+        class="w-52 h-24 border border-black 
+        mt-4 flex 
+        justify-center items-center 
+        text-lg font-medium"&gt;
+                Kotak
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+            <div class="w-full flex flex-col items-center mt-4">
+                <button id="myButton" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded shadow hover:bg-blue-600">
+                    Klik Saya
+                </button>
+
+                <div id="myBox" class="w-52 h-24 border dark:text-white dark:border-white border-black mt-4 flex justify-center items-center text-lg font-medium">
+                    Kotak
+                </div>
+            </div>
+            <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Penjelasan</h3>
+            <p class="dark:text-white text-gray-600 mt-2">Berikut adalah penjelasan dari kode di atas:</p>
+            <ul class="list-disc list-inside mt-2 dark:text-white">
+                <li><strong>Event Klik:</strong> Menampilkan alert ketika tombol diklik.</li>
+                <li><strong>Event Mouse:</strong> Mengubah warna latar div ketika kursor berada di atasnya.</li>
+                <li><strong>Event Keyboard:</strong> Menampilkan karakter yang ditekan di konsol.</li>
+            </ul>
+
+            <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Kesimpulan</h3>
+            <p class="dark:text-white text-gray-600 mt-2">DOM Event memungkinkan Anda untuk merespons interaksi pengguna dengan elemen-elemen pada halaman web. Dengan memahami jenis-jenis event dan cara menangani event menggunakan <code>addEventListener</code>, Anda dapat menciptakan pengalaman pengguna yang lebih interaktif.</p>
+                    <div class="mt-4 flex gap-6">
+                        <a 
+                            href="https://youtu.be/ndYweb0Yn6o?si=FnEZ_Ogtt8po2uGN" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-10 bg-white dark:bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+                <!-- Video Tutorial -->
+                <div class="flex  aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed//ndYweb0Yn6o" 
+                        title="HTML Introduction" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Explanation -->
+                <div class="p-4">
+                    <h2 class="text-xl dark:text-white font-semibold text-gray-800">Apa itu DOM Traversal?</h2>
+                    <p class="dark:text-white text-gray-600 mt-2">DOM Traversal adalah teknik untuk menjelajahi atau menavigasi elemen-elemen dalam struktur pohon DOM (Document Object Model). Dengan DOM Traversal, Anda dapat berpindah dari satu elemen ke elemen lain, seperti ke elemen induk, anak, atau saudara dalam hierarki DOM.</p>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Jenis Metode DOM Traversal</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Berikut adalah metode yang umum digunakan untuk menjelajahi elemen dalam DOM:</p>
+                    <ul class="list-disc list-inside mt-2 dark:text-white">
+                        <li><strong>parentNode:</strong> Mengakses elemen induk (parent) dari elemen saat ini.</li>
+                        <li><strong>childNodes:</strong> Mengakses semua anak elemen, termasuk teks dan komentar (mengembalikan NodeList).</li>
+                        <li><strong>children:</strong> Mengakses semua anak elemen, hanya elemen HTML (mengembalikan HTMLCollection).</li>
+                        <li><strong>firstChild:</strong> Mengakses elemen anak pertama (termasuk teks).</li>
+                        <li><strong>firstElementChild:</strong> Mengakses elemen anak pertama, hanya elemen HTML.</li>
+                        <li><strong>lastChild:</strong> Mengakses elemen anak terakhir (termasuk teks).</li>
+                        <li><strong>lastElementChild:</strong> Mengakses elemen anak terakhir, hanya elemen HTML.</li>
+                        <li><strong>nextSibling:</strong> Mengakses elemen saudara berikutnya (termasuk teks).</li>
+                        <li><strong>nextElementSibling:</strong> Mengakses elemen saudara berikutnya, hanya elemen HTML.</li>
+                        <li><strong>previousSibling:</strong> Mengakses elemen saudara sebelumnya (termasuk teks).</li>
+                        <li><strong>previousElementSibling:</strong> Mengakses elemen saudara sebelumnya, hanya elemen HTML.</li>
+                    </ul>
+
+                    <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Contoh Penggunaan DOM Traversal</h3>
+                    <p class="dark:text-white text-gray-600 mt-2">Berikut adalah contoh cara menggunakan metode DOM Traversal:</p>
+
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm md:text-sm text-gray-800 mt-2 dark:bg-slate-600 overflow-x-scroll">
+                        <code class="dark:text-white">
+// Mengakses elemen parent
+const child = document.getElementById("child");
+console.log(child.parentNode);
+
+// Mengakses elemen anak
+const parent = document.getElementById("parent");
+console.log(parent.children);
+
+// Mengakses elemen pertama dan terakhir
+console.log(parent.firstElementChild);
+console.log(parent.lastElementChild);
+
+// Mengakses elemen saudara (sibling)
+const firstChild = parent.firstElementChild;
+console.log(firstChild.nextElementSibling); 
+// Saudara berikutnya
+console.log
+(firstChild.nextElementSibling.previousElementSibling); 
+// Kembali ke elemen awal
+            </code>
+                </pre>
+
+            <h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Contoh HTML untuk DOM Traversal</h3>
+            <p class="dark:text-white text-gray-600 mt-2">Berikut adalah contoh struktur HTML untuk latihan:</p>
+
+            <pre class="bg-gray-100 p-4 rounded-md text-sm dark:bg-slate-600 overflow-x-scroll text-gray-800 mt-2">
+                <code class="dark:text-white">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, 
+    initial-scale=1.0"&gt;
+    &lt;title&gt;Contoh DOM Traversal&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div id="parent"&gt;
+            &lt;div id="child1"&gt;Anak 1&lt;/div&gt;
+            &lt;div id="child2"&gt;Anak 2&lt;/div&gt;
+            &lt;div id="child3"&gt;Anak 3&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script src="script.js"&lt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                </code>
+            </pre>
+
+<h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Penjelasan</h3>
+<p class="dark:text-white text-gray-600 mt-2">Berikut adalah penjelasan dari kode di atas:</p>
+<ul class="list-disc list-inside mt-2 dark:text-white">
+    <li><strong>parentNode:</strong> Mengakses elemen induk dari elemen dengan ID <code>child</code>.</li>
+    <li><strong>children:</strong> Mengakses semua elemen anak dari elemen dengan ID <code>parent</code>.</li>
+    <li><strong>firstElementChild:</strong> Mengakses elemen anak pertama dari elemen induk.</li>
+    <li><strong>nextElementSibling:</strong> Menavigasi dari elemen anak pertama ke anak berikutnya.</li>
+</ul>
+
+<h3 class="text-lg dark:text-white font-semibold text-gray-800 mt-4">Kesimpulan</h3>
+<p class="dark:text-white text-gray-600 mt-2">DOM Traversal adalah teknik penting untuk menavigasi elemen-elemen dalam struktur DOM. Dengan memahami metode DOM Traversal, Anda dapat mengakses elemen-elemen yang spesifik dan memanipulasi elemen-elemen tersebut dengan mudah menggunakan JavaScript.</p>                    <div class="mt-4 flex gap-6">
+                        <a 
+                            href="https://youtu.be/ndYweb0Yn6o?si=FnEZ_Ogtt8po2uGN" 
+                            target="_blank" 
+                            class="inline-block px-4 py-2 text-sm text-white bg-blue-600 rounded-lg shadow hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none">
+                            Kunjung video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="w-full h-[200px] bg-cyan-400 dark:bg-cyan-700 flex justify-between items-center pt-11">
+        <a href="materiCSS.html">
+          <div class="flex gap-2 px-3 py-6 items-center">
+          <img class="dark:invert" src="./assets/img/arrow-left-circle.svg" alt="" width="25px">
+          <h1 class="font-semibold text-sm md:text-xl dark:text-white">CSS</h1>
+          </div>
+        </a>
+        <a href="kuisJS.html">
+          <div class="flex gap-2 px-3 py-6 items-center">
+          <h1 class="font-semibold text-sm md:text-xl dark:text-white">Kuis JavaScript</h1>
+          </div>
+        </a>
+        <a href="materiHtml.html">
+          <div class="flex gap-2 px-3 py-6 items-center">
+          <h1 class="font-semibold text-sm md:text-xl dark:text-white">HTML</h1>
+          <img class="dark:invert" src="./assets/img/arrow-right-circle.svg" alt="" width="25px">
+          </div>
+        </a>
+      </footer>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+    <script src="./assets/js/darkMode.js"></script>
+</body>
+</html>
